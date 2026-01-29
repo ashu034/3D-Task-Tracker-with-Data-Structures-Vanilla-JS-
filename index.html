@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3D Task Tracker with BST & Graph</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title"> Task Tracker</h1>
+        <div class="input-area">
+            <input type="text" id="new-task" placeholder="Enter new task (unique name)" />
+            <button id="add-btn">Add Task</button>
+        </div>
+
+        <div class="lists-container">
+            <div class="task-list" id="todo-list">
+                <h3>Todo Tasks</h3>
+                <ul id="incomplete-tasks"></ul>
+            </div>
+            <div class="task-list" id="completed-list">
+                <h3>Completed Tasks</h3>
+                <ul id="completed-tasks"></ul>
+            </div>
+        </div>
+
+        <div class="visualization-container">
+            <h2>Task BST Visualization</h2>
+            <canvas id="bst-canvas" width="800" height="400"></canvas>
+        </div>
+
+        <div class="visualization-container">
+            <h2>Task Dependency Graph</h2>
+            <canvas id="graph-canvas" width="800" height="400"></canvas>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="bst.js"></script>
+    <script src="graph.js"></script>
+    <script src="task.js"></script>
+</body>
+
+</html>
